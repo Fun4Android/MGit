@@ -26,5 +26,5 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: build-artifacts
-        path: build/outputs/
+       name: build-artifacts
+       path: build/outputs/**/*  # This will upload all files under the outputs directory recursively
